@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Goal Countdown Tracker</h1>
+    <form id="goal-form">
+      <label for="goal-input">Enter Your Goal:</label>
+      <input type="text" id="goal-input" placeholder="Your goal here..." required>
+      
+      <label for="date-picker">Select Target Date:</label>
+      <input type="date" id="date-picker" required>
+      
+      <button type="submit">Start Countdown</button>
+    </form>
+    
+    <div id="countdown-display" class="hidden">
+      <h2>Your Goal: <span id="goal-display"></span></h2>
+      <p>Time Remaining: <span id="countdown"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
